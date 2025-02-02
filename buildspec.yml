@@ -4,7 +4,7 @@ phases:
     runtime-versions:
       nodejs: latest
     commands:
-      - cd payments/backend
+      - cd backend
       - echo Installing dependencies...
       - npm install -g yarn
       - yarn install
