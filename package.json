@@ -1,0 +1,16 @@
+{
+  "name": "payments-monorepo",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "install": "yarn install",
+    "dev": "yarn --cwd frontend dev & yarn --cwd backend start",
+    "build": "yarn --cwd backend build && yarn --cwd frontend build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
